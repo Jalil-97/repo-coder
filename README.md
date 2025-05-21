@@ -1,5 +1,5 @@
 <h1 align="center">Hola! Soy Jalil</h1>
-<h3 align="center">Este es un proyecto web desarrollado como parte del curso de Desarrollo Web de Coder House. Se trata del sitio oficial de **Lashes Beauty**, un emprendimiento enfocado en extensiones de pestañas, cursos de capacitación y belleza estética.</h3>
+<h3 align="center">Este es un proyecto web desarrollado como parte del curso de Desarrollo Web de Coder House. Se trata del sitio oficial de Lashes Beauty, un emprendimiento enfocado en extensiones de pestañas, cursos de capacitación y belleza estética.</h3>
 
 - Actualmente estoy trabajando en mi primer proyecto llamado: Lashes Beauty
 
