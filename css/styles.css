@@ -458,229 +458,281 @@ footer i {
 
 
 /* SECCIÓN PARA HACER CADA PAGINA RESPONSIVE */
+/* MEDIA QUERIES */
 
-/* HEADER INDEX */
+/* Hasta 1024px (tablets horizontal) */
+@media (max-width: 1024px) {
+    .container-titulo {
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+    /* Mostrar ambos logos en desktop/tablets grandes */
+    .img-logo-academy {
+        height: 100px;
+        width: auto;
+        display: inline-block;
+        object-fit: contain;
+    }
+    .img-logo-secundario {
+        height: 100px;
+        width: auto;
+        display: inline-block;
+        object-fit: contain;
+    }
+    .titulo-principal {
+        font-size: 50px;
+    }
+    .pages {
+        gap: 20px;
+    }
+    .pages li a {
+        font-size: 18px;
+    }
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+    .certificaciones h2 {
+        font-size: 2.5rem;
+    }
+    .texto {
+        font-size: 18px;
+    }
+}
 
-@media screen and (max-width: 768px) {
+/* Hasta 768px (tablets vertical) */
+@media (max-width: 768px) {
+    .container-titulo {
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    /* Oculta el primer logo (izquierdo) */
+    .container-titulo img:first-of-type {
+        display: none;
+    }
+
+    /* Asegura que el segundo logo quede arriba */
+    .container-titulo img:last-of-type {
+        order: 1;
+    }
+
+    .titulo-principal {
+        order: 2;
+        font-size: 40px;
+        flex-basis: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    header p {
+        font-size: 13px;
+        letter-spacing: 3px;
+    }
+    .container-titulo {
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    /* Mostrar solo un logo grande y ocultar el otro */
+    .img-logo-academy {
+        height: 80px;
+        width: auto;
+        display: inline-block;
+        object-fit: contain;
+    }
+    .img-logo-secundario {
+        display: none; /* ocultamos el segundo logo */
+    }
+    .titulo-principal {
+        font-size: 40px;
+        flex-basis: 100%;
+        order: 2;
+        text-align: center;
+    }
+    .pages {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .pages li a {
+        font-size: 16px;
+    }
+    .hero h2 {
+        font-size: 2rem;
+    }
+    .certificaciones {
+        padding: 15px;
+    }
+    .certificaciones h2 {
+        font-size: 2rem;
+    }
+    .texto {
+        font-size: 16px;
+    }
+    .galeria {
+        grid-template-columns: 1fr 1fr;
+    }
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .mapayredes {
+        flex-direction: column;
+        align-items: center;
+    }
+    iframe {
+        width: 100%;
+        height: 150px;
+    }
+}
+
+/* Hasta 480px (celulares grandes) */
+@media (max-width: 480px) {
+    header p {
+        font-size: 12px;
+        letter-spacing: 2px;
+        padding: 3px 5px;
+    }
     .container-titulo {
         flex-direction: column;
         align-items: center;
         gap: 10px;
     }
-
+    /* Solo un logo visible, centrado y reducido */
     .img-logo-academy {
-        width: 100px;
-        height: auto;
+        height: 60px;
+        width: auto;
+        display: inline-block;
+        object-fit: contain;
+        margin-bottom: 8px;
     }
-
+    .img-logo-secundario {
+        display: none;
+    }
     .titulo-principal {
-        font-size: 45px;
+        font-size: 30px;
+        order: 2;
+        flex-basis: auto;
+        letter-spacing: 2px;
         text-align: center;
     }
-
     .pages {
         flex-direction: column;
         gap: 10px;
-    }
-
-    .pages li a {
-        font-size: 18px;
-    }
-
-    h1 {
-        font-size: 50px;
-    }
-}
-
-
-
-@media screen and (max-width: 768px) {
-    .hero {
-        height: auto;
-        padding: 60px 20px;
-    }
-
-    .hero h2 {
-        font-size: 28px;
-    }
-
-    .boton-turno a {
-        font-size: 18px;
-        padding: 10px 20px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .img-logo-academy {
-        width: 80px;
-    }
-
-    .titulo-principal {
-        font-size: 35px;
-    }
-
-    .pages li a {
-        font-size: 16px;
-    }
-
-    h1 {
-        font-size: 35px;
-    }
-
-    header p {
-        font-size: 12px;
-        letter-spacing: 2px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .hero h2 {
-        font-size: 22px;
-    }
-
-    .boton-turno a {
-        font-size: 16px;
-        padding: 8px 18px;
-    }
-}
-
-
-
-
-@media screen and (max-width: 375px) {
-    .certificaciones .container-certificaciones {
-        flex-direction: column;
-        gap: 30px;
-        padding: 20px 10px;
-    }
-
-    .certificaciones .galeria {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 10px;
-        justify-items: center;
-    }
-
-    .certificaciones .galeria img {
-        width: 100%;
-        max-width: 140px;
-        height: auto;
-        object-fit: cover;
-        border-radius: 8px;
-    }
-
-    .certificaciones .texto h2 {
-        font-size: 20px;
-    }
-
-    .certificaciones .texto p {
-        font-size: 14px;
-    }
-
-    .certificaciones>a {
-        font-size: 14px;
-        margin-top: 20px;
-        display: block;
-        text-align: center;
-    }
-}
-
-@media screen and (max-width: 375px) {
-    .certificaciones .container-certificaciones {
-        flex-direction: column;
-        gap: 30px;
-        padding: 20px 10px;
-    }
-
-    .certificaciones .galeria {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 10px;
-        justify-items: center;
-    }
-
-    .certificaciones .galeria img {
-        width: 100%;
-        max-width: 140px;
-        height: auto;
-        object-fit: cover;
-        border-radius: 8px;
-    }
-
-    .certificaciones .texto h2 {
-        font-size: 20px;
-    }
-
-    .certificaciones .texto p {
-        font-size: 14px;
-    }
-
-    .certificaciones>a {
-        font-size: 14px;
-        margin-top: 20px;
-        display: block;
-        text-align: center;
-    }
-}
-
-
-
-@media screen and (max-width: 375px) {
-    footer {
-        padding: 20px 10px;
-    }
-
-    .footer-container {
-        display: flex;
-        flex-direction: column;
         align-items: center;
-        gap: 20px;
-    }
-
-    .mapayredes {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-    }
-
-    .mapayredes iframe {
-        width: 100%;
-        max-width: 300px;
-        height: 150px;
-        border-radius: 8px;
-    }
-
-    .iconos-footer {
-        list-style: none;
         padding: 0;
-        margin: 0;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        align-items: center;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+    .pages li a {
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+    .hero h2 {
+        font-size: 1.7rem;
+        padding: 0 10px;
+    }
+    .certificaciones {
+        padding: 15px 10px;
+    }
+    .certificaciones h2 {
+        font-size: 1.8rem;
+    }
+    .texto {
         font-size: 14px;
+    }
+    .galeria {
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+    }
+    iframe {
+        width: 100%;
+        height: 130px;
+    }
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
         text-align: center;
     }
+    .mapayredes {
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
-    .iconos-footer li a {
-        display: flex;
+/* Hasta 350px (celulares pequeños) */
+@media (max-width: 350px) {
+    header p {
+        font-size: 10px;
+        letter-spacing: 1.5px;
+        padding: 2px 5px;
+    }
+    .container-titulo {
+        flex-direction: column;
         align-items: center;
         gap: 6px;
-        color: #000;
-        text-decoration: none;
-        transition: color 0.3s ease;
     }
-
-    .iconos-footer li a:hover {
-        color: #b48fb8;
+    /* Logo aún más pequeño y solo uno visible */
+    .img-logo-academy {
+        height: 50px;
+        width: auto;
+        display: inline-block;
+        object-fit: contain;
     }
-
-    .copyright p {
-        font-size: 12px;
+    .img-logo-secundario {
+        display: none;
+    }
+    .titulo-principal {
+        font-size: 25px;
+        letter-spacing: 1.5px;
         text-align: center;
-        color: #777;
-        margin-top: 10px;
     }
+    .pages {
+        flex-direction: column;
+        gap: 8px;
+        align-items: center;
+        padding: 0 5px;
+        max-width: 100%;
+    }
+    .pages li a {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+    .hero h2 {
+        font-size: 1.3rem;
+        padding: 0 5px;
+    }
+    .certificaciones {
+        padding: 10px 5px;
+    }
+    .certificaciones h2 {
+        font-size: 1.5rem;
+    }
+    .texto {
+        font-size: 13px;
+    }
+    .galeria {
+        grid-template-columns: 1fr;
+        gap: 6px;
+    }
+    iframe {
+        width: 100%;
+        height: 110px;
+    }
+}
+
+
+
+
+/* Mostrar solo un logo en pantallas chicas */
+
+
+/* Asegura que las imágenes de .galeria se vean completas sin recorte */
+.galeria img {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
 }
