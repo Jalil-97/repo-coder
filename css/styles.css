@@ -400,7 +400,7 @@ header nav {
 
 .col-md-6 {
     padding: 5px;
-   
+
 }
 
 .col-md-6 ul li {
@@ -454,4 +454,233 @@ footer i {
     color: white;
     font-size: 25px;
     padding: 5px;
+}
+
+
+/* SECCIÓN PARA HACER CADA PAGINA RESPONSIVE */
+
+/* HEADER INDEX */
+
+@media screen and (max-width: 768px) {
+    .container-titulo {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .img-logo-academy {
+        width: 100px;
+        height: auto;
+    }
+
+    .titulo-principal {
+        font-size: 45px;
+        text-align: center;
+    }
+
+    .pages {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .pages li a {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .hero {
+        height: auto;
+        padding: 60px 20px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .boton-turno a {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .img-logo-academy {
+        width: 80px;
+    }
+
+    .titulo-principal {
+        font-size: 35px;
+    }
+
+    .pages li a {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    header p {
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero h2 {
+        font-size: 22px;
+    }
+
+    .boton-turno a {
+        font-size: 16px;
+        padding: 8px 18px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 375px) {
+    .certificaciones .container-certificaciones {
+        flex-direction: column;
+        gap: 30px;
+        padding: 20px 10px;
+    }
+
+    .certificaciones .galeria {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        justify-items: center;
+    }
+
+    .certificaciones .galeria img {
+        width: 100%;
+        max-width: 140px;
+        height: auto;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    .certificaciones .texto h2 {
+        font-size: 20px;
+    }
+
+    .certificaciones .texto p {
+        font-size: 14px;
+    }
+
+    .certificaciones>a {
+        font-size: 14px;
+        margin-top: 20px;
+        display: block;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .certificaciones .container-certificaciones {
+        flex-direction: column;
+        gap: 30px;
+        padding: 20px 10px;
+    }
+
+    .certificaciones .galeria {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        justify-items: center;
+    }
+
+    .certificaciones .galeria img {
+        width: 100%;
+        max-width: 140px;
+        height: auto;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    .certificaciones .texto h2 {
+        font-size: 20px;
+    }
+
+    .certificaciones .texto p {
+        font-size: 14px;
+    }
+
+    .certificaciones>a {
+        font-size: 14px;
+        margin-top: 20px;
+        display: block;
+        text-align: center;
+    }
+}
+
+
+
+@media screen and (max-width: 375px) {
+    footer {
+        padding: 20px 10px;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .mapayredes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .mapayredes iframe {
+        width: 100%;
+        max-width: 300px;
+        height: 150px;
+        border-radius: 8px;
+    }
+
+    .iconos-footer {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .iconos-footer li a {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        color: #000;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .iconos-footer li a:hover {
+        color: #b48fb8;
+    }
+
+    .copyright p {
+        font-size: 12px;
+        text-align: center;
+        color: #777;
+        margin-top: 10px;
+    }
 }
