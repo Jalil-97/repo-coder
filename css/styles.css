@@ -88,6 +88,8 @@ header nav {
 }
 
 
+
+
 /*--------MAIN--------*/
 
 
@@ -397,7 +399,6 @@ header nav {
 }
 
 
-
 .col-md-6 {
     padding: 5px;
 
@@ -458,281 +459,677 @@ footer i {
 
 
 /* SECCIÓN PARA HACER CADA PAGINA RESPONSIVE */
-/* MEDIA QUERIES */
+/* ========================== */
+/* MEDIA QUERIES RESPONSIVE  */
+/* ========================== */
 
-/* Hasta 1024px (tablets horizontal) */
+/* === 1024px === */
 @media (max-width: 1024px) {
-    .container-titulo {
-        flex-wrap: nowrap;
-        justify-content: center;
-    }
-    /* Mostrar ambos logos en desktop/tablets grandes */
-    .img-logo-academy {
-        height: 100px;
-        width: auto;
-        display: inline-block;
-        object-fit: contain;
-    }
-    .img-logo-secundario {
-        height: 100px;
-        width: auto;
-        display: inline-block;
-        object-fit: contain;
-    }
-    .titulo-principal {
-        font-size: 50px;
-    }
-    .pages {
-        gap: 20px;
-    }
-    .pages li a {
-        font-size: 18px;
-    }
-    .hero h2 {
-        font-size: 2.5rem;
-    }
-    .certificaciones h2 {
-        font-size: 2.5rem;
-    }
-    .texto {
-        font-size: 18px;
-    }
-}
-
-/* Hasta 768px (tablets vertical) */
-@media (max-width: 768px) {
-    .container-titulo {
-        flex-wrap: wrap;
-        gap: 10px;
-        justify-content: center;
+    .container-certificaciones {
+        grid-template-columns: 1fr;
     }
 
-    /* Oculta el primer logo (izquierdo) */
-    .container-titulo img:first-of-type {
-        display: none;
-    }
-
-    /* Asegura que el segundo logo quede arriba */
-    .container-titulo img:last-of-type {
-        order: 1;
-    }
-
-    .titulo-principal {
-        order: 2;
-        font-size: 40px;
-        flex-basis: 100%;
-        text-align: center;
-    }
-}
-
-@media (max-width: 768px) {
-    header p {
-        font-size: 13px;
-        letter-spacing: 3px;
-    }
-    .container-titulo {
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-    }
-    /* Mostrar solo un logo grande y ocultar el otro */
-    .img-logo-academy {
-        height: 80px;
-        width: auto;
-        display: inline-block;
-        object-fit: contain;
-    }
-    .img-logo-secundario {
-        display: none; /* ocultamos el segundo logo */
-    }
-    .titulo-principal {
-        font-size: 40px;
-        flex-basis: 100%;
-        order: 2;
-        text-align: center;
-    }
-    .pages {
-        gap: 15px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .pages li a {
-        font-size: 16px;
-    }
-    .hero h2 {
-        font-size: 2rem;
-    }
-    .certificaciones {
-        padding: 15px;
-    }
-    .certificaciones h2 {
-        font-size: 2rem;
-    }
-    .texto {
-        font-size: 16px;
-    }
     .galeria {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
+
+    .galeria-servicios {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .footer-container {
         flex-direction: column;
         align-items: center;
     }
+
     .mapayredes {
         flex-direction: column;
         align-items: center;
     }
+
+    /* 1024px */
+    header p {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .container-titulo {
+        gap: 30px;
+    }
+
+    .img-logo-academy {
+        width: 100px;
+    }
+
+    .titulo-principal {
+        font-size: 2.2rem;
+    }
+
+    nav ul.pages li a {
+        font-size: 18px;
+        padding: 10px 15px;
+    }
+
+    .bg-light .container h1.titulos-main {
+        font-size: 2.5rem;
+    }
+
+    .row.mb-5>div {
+        padding: 0 25px;
+    }
+
+    .row.mb-5 h4 {
+        font-size: 1.8rem;
+    }
+
+    .row.mb-5 ul.list-group li {
+        font-size: 16px;
+    }
+
+    .row.mb-5 p,
+    .row.mb-5 ul li {
+        font-size: 16px;
+    }
+
+    .carousel-inner img {
+        max-width: 450px;
+        height: auto;
+    }
+
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .mapayredes iframe {
+        width: 300px;
+        height: 125px;
+    }
+
+    .iconos-footer li a {
+        font-size: 18px;
+    }
+
+    footer .footer-container {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 40px;
+    }
+
+    footer .copyright {
+        flex: 0 0 auto;
+        margin-top: 0;
+        text-align: right;
+        font-size: 16px;
+        color: #555;
+    }
+
+    .galeria-servicios {
+        padding: 2rem 3rem;
+    }
+
+    .servicio {
+        width: 45%;
+        margin: 1rem auto;
+    }
+
+    .turno-contenido {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        padding: 2rem 3rem;
+    }
+
+    .formulario-turno,
+    .condiciones-turno {
+        flex: 1 1 45%;
+    }
+
+    iframe {
+        width: 100% !important;
+        height: 150px !important;
+    }
+
+}
+
+
+/* === 768px === */
+@media (max-width: 768px) {
+
+    h1,
+    .titulo-principal {
+        font-size: 40px;
+    }
+
+    .pages {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .container-titulo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-logo-academy:first-of-type {
+        display: none;
+    }
+
+    .galeria {
+        gap: 20px;
+    }
+
+    .galeria-servicios {
+        grid-template-columns: 1fr;
+    }
+
+    .servicio {
+        width: 90%;
+    }
+
+    .turno-contenido {
+        padding: 20px;
+    }
+
+    .formulario-turno,
+    .condiciones-turno {
+        padding: 20px;
+    }
+
+    .certificaciones h2 {
+        font-size: 2rem;
+    }
+
+    /* 768px */
+    header p {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    .container-titulo {
+        gap: 20px;
+    }
+
+    .img-logo-academy {
+        width: 80px;
+    }
+
+    .titulo-principal {
+        font-size: 1.8rem;
+    }
+
+    nav ul.pages {
+        justify-content: center;
+    }
+
+    nav ul.pages li a {
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+
+    .bg-light .container h1.titulos-main {
+        font-size: 2rem;
+    }
+
+    .row.mb-5>div {
+        padding: 0 20px;
+    }
+
+    .row.mb-5 h4 {
+        font-size: 1.5rem;
+    }
+
+    .row.mb-5 ul.list-group li {
+        font-size: 14px;
+    }
+
+    .row.mb-5 p,
+    .row.mb-5 ul li {
+        font-size: 14px;
+    }
+
+    .carousel-inner img {
+        max-width: 400px;
+        height: auto;
+    }
+
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .mapayredes iframe {
+        width: 300px;
+        height: 125px;
+    }
+
+    .iconos-footer li a {
+        font-size: 16px;
+    }
+
+    footer .footer-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    footer .copyright {
+        flex: 1 1 100%;
+        text-align: center;
+        font-size: 14px;
+        margin-top: 10px;
+        color: #555;
+    }
+
+    .galeria-servicios {
+        padding: 1.5rem 2rem;
+    }
+
+    .servicio {
+        width: 60%;
+    }
+
+    .turno-contenido {
+        padding: 1.5rem 2rem;
+    }
+
+    .formulario-turno,
+    .condiciones-turno {
+        flex: 1 1 100%;
+    }
+
+    form.form-turno {
+        max-width: 100%;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    input[type="date"],
+    input[type="time"],
+    select {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+        padding: 1rem;
+        font-size: 1.1rem;
+    }
+
+}
+
+
+/* === 480px === */
+@media (max-width: 480px) {
+    header p {
+        font-size: 13px;
+        letter-spacing: 1px;
+    }
+
+    h1,
+    .titulo-principal {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .boton-turno a {
+        font-size: 20px;
+        padding: 8px 16px;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .certificaciones a {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .form-turno button {
+        font-size: 16px;
+    }
+
+    .condiciones-turno h2 {
+        font-size: 20px;
+    }
+
+    .iconos-footer a {
+        font-size: 14px;
+    }
+
+    footer i {
+        font-size: 20px;
+    }
+
     iframe {
         width: 100%;
         height: 150px;
     }
-}
 
-/* Hasta 480px (celulares grandes) */
-@media (max-width: 480px) {
+    /* 480px */
     header p {
         font-size: 12px;
-        letter-spacing: 2px;
-        padding: 3px 5px;
+        padding: 6px 10px;
     }
+
     .container-titulo {
-        flex-direction: column;
-        align-items: center;
         gap: 10px;
     }
-    /* Solo un logo visible, centrado y reducido */
+
     .img-logo-academy {
-        height: 60px;
-        width: auto;
-        display: inline-block;
-        object-fit: contain;
-        margin-bottom: 8px;
+        width: 60px;
     }
-    .img-logo-secundario {
-        display: none;
-    }
+
     .titulo-principal {
-        font-size: 30px;
-        order: 2;
-        flex-basis: auto;
-        letter-spacing: 2px;
-        text-align: center;
+        font-size: 1.5rem;
     }
-    .pages {
-        flex-direction: column;
-        gap: 10px;
-        align-items: center;
-        padding: 0;
-        margin: 0 auto;
-        max-width: 100%;
+
+    nav ul.pages {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
     }
-    .pages li a {
-        font-size: 16px;
-        padding: 8px 15px;
+
+    nav ul.pages li a {
+        font-size: 14px;
+        padding: 5px 8px;
     }
-    .hero h2 {
-        font-size: 1.7rem;
-        padding: 0 10px;
+
+    .bg-light .container h1.titulos-main {
+        font-size: 1.6rem;
     }
-    .certificaciones {
-        padding: 15px 10px;
+
+    .row.mb-5>div {
+        padding: 0 15px;
     }
-    .certificaciones h2 {
-        font-size: 1.8rem;
+
+    .row.mb-5 h4 {
+        font-size: 1.3rem;
     }
-    .texto {
+
+    .row.mb-5 ul.list-group li {
+        font-size: 13px;
+    }
+
+    .row.mb-5 p,
+    .row.mb-5 ul li {
+        font-size: 13px;
+    }
+
+    .carousel-inner img {
+        max-width: 380px;
+        height: auto;
+    }
+
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .mapayredes iframe {
+        width: 300px;
+        height: 125px;
+    }
+
+    .iconos-footer li a {
         font-size: 14px;
     }
-    .galeria {
-        grid-template-columns: 1fr 1fr;
-        gap: 8px;
+
+    footer .footer-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        padding: 12px;
     }
-    iframe {
+
+    footer .copyright {
+        flex: 1 1 100%;
+        text-align: center;
+        font-size: 13px;
+        margin-top: 8px;
+        color: #555;
+    }
+
+    .galeria-servicios {
+        padding: 1rem 1.5rem;
+    }
+
+    .servicio {
+        width: 90%;
+        margin: 1rem auto;
+    }
+
+    .boton-turno a {
+        display: block;
         width: 100%;
-        height: 130px;
+        text-align: center;
+        padding: 1rem 0;
+        font-size: 1.2rem;
     }
+
+    .turno-contenido {
+        padding: 1rem 1.5rem;
+    }
+
+    .titulos-main {
+        font-size: 1.5rem;
+    }
+
+    .formulario-turno label,
+    .condiciones-turno ul li {
+        font-size: 0.9rem;
+    }
+
+    .condiciones-turno h2 {
+        font-size: 1.3rem;
+    }
+
+    iframe {
+        height: 120px !important;
+    }
+
+}
+
+
+/* === 350px === */
+@media (max-width: 350px) {
+    header p {
+        font-size: 12px;
+        letter-spacing: 0.5px;
+        padding: 5px 10px;
+    }
+
+    h1,
+    .titulo-principal {
+        font-size: 24px;
+        padding: 5px;
+    }
+
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .boton-turno a {
+        font-size: 16px;
+        padding: 6px 12px;
+    }
+
+    .texto {
+        font-size: 16px;
+    }
+
+    .certificaciones a {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .form-turno input,
+    .form-turno select {
+        font-size: 14px;
+    }
+
+    .form-turno button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .condiciones-turno {
+        padding: 20px;
+    }
+
+    .condiciones-turno h2 {
+        font-size: 18px;
+    }
+
+    .iconos-footer a {
+        font-size: 12px;
+    }
+
+    footer i {
+        font-size: 18px;
+    }
+
+    iframe {
+        height: 120px;
+    }
+
+    /* 350px */
+    header p {
+        font-size: 10px;
+        padding: 5px 8px;
+        text-align: center;
+    }
+
+    .container-titulo {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .img-logo-academy {
+        width: 50px;
+        height: auto;
+    }
+
+    .titulo-principal {
+        font-size: 1.2rem;
+    }
+
+    nav ul.pages {
+        flex-direction: column;
+        gap: 8px;
+        padding: 0;
+    }
+
+    nav ul.pages li a {
+        font-size: 12px;
+    }
+
+    .bg-light .container h1.titulos-main {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .row.mb-5>div {
+        padding: 0 10px;
+        margin-bottom: 20px;
+    }
+
+    .row.mb-5 h4 {
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+    }
+
+    .row.mb-5 ul.list-group li {
+        font-size: 12px;
+    }
+
+    .row.mb-5 p,
+    .row.mb-5 ul li {
+        font-size: 12px;
+    }
+
+    .carousel-inner img {
+        max-width: 90vw;
+        height: auto;
+    }
+
     .footer-container {
         flex-direction: column;
         align-items: center;
-        text-align: center;
     }
-    .mapayredes {
-        flex-direction: column;
-        align-items: center;
-    }
-}
 
-/* Hasta 350px (celulares pequeños) */
-@media (max-width: 350px) {
-    header p {
-        font-size: 10px;
-        letter-spacing: 1.5px;
-        padding: 2px 5px;
+    .mapayredes iframe {
+        width: 280px;
+        height: 120px;
     }
-    .container-titulo {
-        flex-direction: column;
+
+    .iconos-footer li a {
+        font-size: 12px;
+    }
+
+    footer .footer-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         align-items: center;
-        gap: 6px;
+        gap: 10px;
+        padding: 10px;
     }
-    /* Logo aún más pequeño y solo uno visible */
-    .img-logo-academy {
-        height: 50px;
-        width: auto;
-        display: inline-block;
-        object-fit: contain;
-    }
-    .img-logo-secundario {
-        display: none;
-    }
-    .titulo-principal {
-        font-size: 25px;
-        letter-spacing: 1.5px;
+
+    footer .copyright {
+        flex: 1 1 100%;
         text-align: center;
+        font-size: 12px;
+        margin-top: 8px;
+        color: #555;
     }
-    .pages {
-        flex-direction: column;
-        gap: 8px;
-        align-items: center;
-        padding: 0 5px;
-        max-width: 100%;
-    }
-    .pages li a {
-        font-size: 14px;
-        padding: 6px 10px;
-    }
-    .hero h2 {
-        font-size: 1.3rem;
-        padding: 0 5px;
-    }
-    .certificaciones {
-        padding: 10px 5px;
-    }
-    .certificaciones h2 {
+
+    .galeria-servicios h1.titulos-main {
         font-size: 1.5rem;
+        padding: 0 1rem;
     }
-    .texto {
-        font-size: 13px;
+
+    .servicio h3 {
+        font-size: 1rem;
     }
-    .galeria {
-        grid-template-columns: 1fr;
-        gap: 6px;
+
+    .boton-turno a {
+        font-size: 1rem;
     }
-    iframe {
-        width: 100%;
-        height: 110px;
+
+    .titulos-main {
+        font-size: 1.3rem;
     }
-}
 
+    button[type="submit"] {
+        font-size: 1rem;
+        padding: 0.75rem;
+    }
 
+    .formulario-turno label,
+    .condiciones-turno ul li {
+        font-size: 0.85rem;
+    }
 
+    .condiciones-turno h2 {
+        font-size: 1.1rem;
+    }
 
-/* Mostrar solo un logo en pantallas chicas */
-
-
-/* Asegura que las imágenes de .galeria se vean completas sin recorte */
-.galeria img {
-    object-fit: contain;
-    width: 100%;
-    height: auto;
 }
