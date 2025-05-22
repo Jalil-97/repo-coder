@@ -13,6 +13,11 @@ body {
     font-family: "quicksand";
 }
 
+body,
+html {
+    height: 100%;
+}
+
 li {
     list-style: none;
     /* saco las viñetas de todas las listas del HTML*/
@@ -98,6 +103,7 @@ header nav {
     background-size: cover;
     background-position: center 25%;
     background-attachment: fixed;
+    background-repeat: no-repeat;
     height: 60vh;
     display: flex;
     flex-direction: column;
@@ -470,7 +476,10 @@ footer i {
     }
 
     .galeria {
-        grid-template-columns: repeat(2, 1fr);
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 20px;
+        padding: 1rem;
     }
 
     .galeria-servicios {
