@@ -104,7 +104,7 @@ header nav {
     background-position: center 25%;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    height: 60vh;
+    height: 60dvh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -601,6 +601,16 @@ footer i {
         height: 150px !important;
     }
 
+    .hero {
+        background-attachment: scroll;
+        /* este es el valor por defecto */
+    }
+
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+
 }
 
 
@@ -771,6 +781,22 @@ footer i {
         width: 100%;
         padding: 1rem;
         font-size: 1.1rem;
+    }
+
+    .hero {
+        background-attachment: scroll;
+        /* este es el valor por defecto */
+    }
+
+    .galeria {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 0 1rem;
+    }
+
+    .galeria img {
+        height: auto;
+        object-fit: contain;
     }
 
 }
@@ -952,6 +978,21 @@ footer i {
 
     iframe {
         height: 120px !important;
+    }
+
+    .hero {
+        background-attachment: scroll;
+        /* este es el valor por defecto */
+    }
+
+    .galeria {
+        gap: 20px;
+        padding: 0 0.5rem;
+    }
+
+    .galeria img {
+        height: auto;
+        object-fit: contain;
     }
 
 }
@@ -1139,6 +1180,21 @@ footer i {
 
     .condiciones-turno h2 {
         font-size: 1.1rem;
+    }
+
+    .hero {
+        background-attachment: scroll;
+        /* este es el valor por defecto */
+    }
+
+    .galeria {
+        gap: 15px;
+        padding: 0 0.25rem;
+    }
+
+    .galeria img {
+        height: auto;
+        object-fit: contain;
     }
 
 }
