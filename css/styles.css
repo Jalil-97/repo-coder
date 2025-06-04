@@ -92,9 +92,6 @@ header nav {
     letter-spacing: 3px;
 }
 
-
-
-
 /*--------MAIN--------*/
 
 
@@ -153,6 +150,7 @@ header nav {
     transform: translateY(-2px);
 }
 
+/*SCSS OK HASTA ACA*/
 
 .certificaciones {
     background-color: #000000;
@@ -161,8 +159,6 @@ header nav {
     padding: 25px;
     border-radius: 5px;
     margin-top: 1px;
-    margin-top: 1px;
-
 }
 
 .container-certificaciones {
@@ -219,9 +215,15 @@ header nav {
     transform: scale(1.10);
 }
 
+
 .titulos-main {
     text-align: center;
     font-size: 50px;
+    grid-column: 1 / -1;
+    /* que ocupe toda la fila */
+    margin-bottom: 10px;
+    color: #c4817e;
+
 }
 
 .galeria-servicios {
@@ -232,19 +234,9 @@ header nav {
     gap: 20px;
     /* espacio entre filas y columnas */
     padding: 20px;
-    margin: px;
     border-radius: 5px;
 }
 
-
-.titulos-main {
-    grid-column: 1 / -1;
-    /* que ocupe toda la fila */
-    text-align: center;
-    font-size: 50px;
-    margin-bottom: 10px;
-    color: #c4817e;
-}
 
 .servicio {
     border: 2px solid white;
@@ -313,16 +305,6 @@ header nav {
     border-radius: 10px;
 }
 
-.condiciones-turno {
-    flex: 1 1 400px;
-    max-width: 500px;
-    background-color: #1a1a1a;
-    padding: 50px;
-    border-radius: 10px;
-    border: solid 2px white;
-
-
-}
 
 .form-turno {
     display: flex;
@@ -356,6 +338,17 @@ header nav {
     background-color: #a96865;
 }
 
+
+.condiciones-turno {
+    flex: 1 1 400px;
+    max-width: 500px;
+    background-color: #1a1a1a;
+    padding: 50px;
+    border-radius: 10px;
+    border: solid 2px white;
+
+}
+
 .condiciones-turno h2 {
     text-align: center;
     color: #c4817e;
@@ -378,8 +371,17 @@ header nav {
     font-size: 18px;
     color: #c4817e;
 }
-
 /* Cursos & capacitaciones (bootstrap) */
+
+.cursos-y-capacitaciones {
+    background-color: #000000;
+    color: #c4817e;
+    display: grid;
+    padding-top: 25px;
+    border-radius: 5px;
+    margin-top: 0px;
+
+}
 
 .bg-light {
     background-color: black !important;
@@ -389,10 +391,6 @@ header nav {
 .text-dark {
     color: white !important;
 
-}
-
-.bg-light py-5 {
-    border-radius: 2px !important;
 }
 
 .container h4 {
@@ -412,6 +410,43 @@ header nav {
 
 .col-md-6 ul li {
     list-style: disc;
+}
+
+/*ESTILOS "CONOCENOS"*/
+
+.conocenos {
+    background-color: #000000;
+    color: #c4817e;
+    padding: 25px;
+    border-radius: 5px;
+    margin-top: 1px;
+}
+
+.intro-equipo p {
+    color: white;
+    text-align: center;
+}
+
+.fotos-equipo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.foto-grupal {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.foto-grupal:hover {
+    transform: scale(1.05);
 }
 
 
@@ -462,6 +497,7 @@ footer i {
     font-size: 25px;
     padding: 5px;
 }
+
 
 
 /* SECCIÓN PARA HACER CADA PAGINA RESPONSIVE */
@@ -611,8 +647,13 @@ footer i {
         gap: 40px;
     }
 
-}
+    .fotos-equipo {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        padding: 30px 15px;
+    }
 
+}
 
 /* === 768px === */
 @media (max-width: 768px) {
@@ -661,7 +702,7 @@ footer i {
         font-size: 2rem;
     }
 
-    /* 768px */
+
     header p {
         font-size: 14px;
         padding: 8px 15px;
@@ -799,8 +840,12 @@ footer i {
         object-fit: contain;
     }
 
-}
+    .fotos-equipo {
+        grid-template-columns: 1fr;
+        padding: 20px 10px;
+    }
 
+}
 
 /* === 480px === */
 @media (max-width: 480px) {
@@ -995,8 +1040,16 @@ footer i {
         object-fit: contain;
     }
 
-}
+    .fotos-equipo {
+        padding: 15px 8px;
+    }
 
+    .foto-grupal {
+        border-radius: 8px;
+    }
+
+}
+/*SCSS OK HASTA ACA*/
 
 /* === 350px === */
 @media (max-width: 350px) {
@@ -1060,7 +1113,7 @@ footer i {
         height: 120px;
     }
 
-    /* 350px */
+
     header p {
         font-size: 10px;
         padding: 5px 8px;
@@ -1195,6 +1248,16 @@ footer i {
     .galeria img {
         height: auto;
         object-fit: contain;
+    }
+
+    .fotos-equipo {
+        padding: 10px 5px;
+        gap: 10px;
+    }
+
+    .foto-grupal {
+        border-radius: 6px;
+        box-shadow: none;
     }
 
 }

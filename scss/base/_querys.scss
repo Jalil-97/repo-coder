@@ -1,0 +1,980 @@
+
+@media (max-width: 1024px) {
+    .container-certificaciones {
+        grid-template-columns: 1fr;
+    }
+
+    .galeria {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 20px;
+        padding: 1rem;
+
+    }
+
+    .galeria-servicios {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mapayredes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header {
+        p {
+            font-size: 16px;
+            padding: 10px 20px;
+        }
+    }
+
+    .container-titulo {
+        gap: 30px;
+    }
+
+    .img-logo-academy {
+        width: 100px;
+    }
+
+    .titulo-principal {
+        font-size: 2.2rem;
+    }
+
+    nav {
+        ul.pages {
+            li {
+                a {
+                    font-size: 18px;
+                    padding: 10px 15px;
+                }
+            }
+        }
+    }
+
+    .bg-light {
+        .container {
+            h1.titulos-main {
+                font-size: 2.5rem;
+
+            }
+        }
+    }
+
+    .row.mb-5 {
+        >div {
+            padding: 0 25px;
+
+        }
+
+        h4 {
+            font-size: 1.8rem;
+
+        }
+
+        ul.list-group {
+            li {
+                font-size: 16px;
+
+            }
+        }
+
+        p {
+            font-size: 16px;
+
+        }
+
+        ul {
+
+            li {
+                font-size: 16px;
+
+            }
+        }
+    }
+
+    .carousel-inner {
+        div {
+            img {
+                max-width: 450px;
+                height: auto;
+            }
+        }
+    }
+
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .mapayredes {
+        iframe {
+            width: 300px;
+            height: 125px;
+        }
+    }
+
+    .iconos-footer {
+        li {
+            a {
+                font-size: 18px;
+            }
+        }
+    }
+
+    footer {
+        .footer-container {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+        }
+
+        .copyright {
+            flex: 0 0 auto;
+            margin-top: 0;
+            text-align: right;
+            font-size: 16px;
+            color: #555;
+        }
+    }
+
+    .galeria-servicios {
+        padding: 2rem 3rem;
+    }
+
+    .servicio {
+        width: 45%;
+        margin: 1rem auto;
+    }
+
+    .turno-contenido {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        padding: 2rem 3rem;
+    }
+
+    .formulario-turno,
+    .condiciones-turno {
+        flex: 1 1 45%;
+    }
+
+    iframe {
+        width: 100% !important;
+        height: 150px !important;
+    }
+
+    .hero {
+        background-attachment: scroll;
+
+    }
+
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+
+    .fotos-equipo {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        padding: 30px 15px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    h1,
+    .titulo-principal {
+        font-size: 40px;
+    }
+
+    .pages {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .container-titulo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-logo-academy:first-of-type {
+        display: none;
+    }
+
+    .galeria {
+        gap: 20px;
+    }
+
+    .galeria-servicios {
+        grid-template-columns: 1fr;
+    }
+
+    .turno-contenido {
+        padding: 20px;
+    }
+
+    .formulario-turno,
+    .condiciones-turno {
+        padding: 20px;
+    }
+
+    .certificaciones {
+        div {
+            div {
+                h2 {
+                    font-size: 2rem;
+
+                }
+            }
+
+        }
+    }
+
+    header {
+        p {
+            font-size: 14px;
+            padding: 8px 15px;
+        }
+    }
+
+    .container-titulo {
+        gap: 20px;
+    }
+
+    .img-logo-academy {
+        width: 80px;
+    }
+
+    .titulo-principal {
+        font-size: 1.8rem;
+    }
+
+    nav {
+        ul.pages {
+            justify-content: center;
+
+            li {
+                a {
+                    font-size: 16px;
+                    padding: 8px 12px;
+                }
+            }
+        }
+    }
+
+    .bg-light {
+        .container {
+            h1.titulos-main {
+                font-size: 2rem;
+
+            }
+        }
+    }
+
+    .row.mb-5 {
+        >div {
+            padding: 0 20px;
+
+        }
+
+        h4 {
+            font-size: 1.5rem;
+
+        }
+
+        ul.list-group {
+            li {
+                font-size: 14px;
+
+            }
+        }
+
+        p {
+            font-size: 14px;
+
+        }
+
+        ul {
+
+            li {
+                font-size: 14px;
+
+            }
+        }
+    }
+
+    .carousel-inner {
+        div {
+            img {
+                max-width: 400px;
+                height: auto;
+            }
+        }
+    }
+
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .mapayredes {
+        iframe {
+            width: 300px;
+            height: 125px;
+        }
+    }
+
+    .iconos-footer {
+        li {
+            a {
+                font-size: 16px;
+            }
+        }
+    }
+
+    footer {
+        .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            padding: 15px;
+        }
+
+        .copyright {
+            flex: 1 1 100%;
+            text-align: center;
+            font-size: 14px;
+            margin-top: 10px;
+            color: #555;
+        }
+    }
+
+    .galeria-servicios {
+        padding: 1.5rem 2rem;
+    }
+
+    .servicio {
+        width: 60%;
+    }
+
+    .turno-contenido {
+        padding: 1.5rem 2rem;
+    }
+
+    .formulario-turno,
+    .condiciones-turno {
+        flex: 1 1 100%;
+    }
+
+    form.form-turno {
+        max-width: 100%;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    input[type="date"],
+    input[type="time"],
+    select {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+        padding: 1rem;
+        font-size: 1.1rem;
+    }
+
+    .hero {
+        background-attachment: scroll;
+
+    }
+
+    .galeria {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 0 1rem;
+
+        img {
+            height: auto;
+            object-fit: contain;
+        }
+    }
+
+    .fotos-equipo {
+        grid-template-columns: 1fr;
+        padding: 20px 10px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    header {
+        p {
+            font-size: 12px;
+            letter-spacing: 1px;
+            padding: 6px 10px;
+
+        }
+    }
+
+    h1,
+    .titulo-principal {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .hero {
+        h2 {
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        .boton-turno {
+            a {
+
+                display: block;
+                width: 100%;
+                text-align: center;
+                padding: 1rem 0;
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    .galeria {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .certificaciones {
+        a {
+            font-size: 16px;
+            padding: 10px;
+        }
+    }
+
+    .form-turno {
+        button {
+            font-size: 16px;
+
+        }
+    }
+
+    .condiciones-turno {
+        h2 {
+            font-size: 20px;
+
+        }
+    }
+
+    .iconos-footer {
+        a {
+            font-size: 14px;
+
+        }
+    }
+
+    footer {
+        div {
+            ul {
+                li {
+                    a {
+                        i {
+                            font-size: 20px;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    iframe {
+        width: 100%;
+        height: 150px;
+    }
+
+    .container-titulo {
+        gap: 10px;
+    }
+
+    .img-logo-academy {
+        width: 60px;
+    }
+
+    .titulo-principal {
+        font-size: 1.5rem;
+    }
+
+    nav {
+        ul.pages {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            li {
+                a {
+                    font-size: 14px;
+                    padding: 5px 8px;
+                }
+            }
+        }
+    }
+
+    .bg-light {
+        .container {
+            h1.titulos-main {
+                font-size: 1.6rem;
+
+            }
+        }
+    }
+
+    .row.mb-5 {
+        >div {
+            padding: 0 15px;
+
+        }
+
+        h4 {
+            font-size: 1.3rem;
+
+        }
+
+        ul.list-group {
+            li {
+                font-size: 13px;
+
+            }
+        }
+
+        p {
+            font-size: 13px;
+
+        }
+
+        ul {
+
+            li {
+                font-size: 13px;
+
+            }
+        }
+    }
+
+    .carousel-inner {
+        div {
+            img {
+                max-width: 380px;
+                height: auto;
+            }
+        }
+    }
+
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .mapayredes {
+        iframe {
+            width: 300px;
+            height: 125px;
+        }
+    }
+
+    .iconos-footer {
+        li {
+            a {
+                font-size: 14px;
+            }
+        }
+    }
+
+    footer {
+        .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            padding: 12px;
+        }
+
+        .copyright {
+            flex: 1 1 100%;
+            text-align: center;
+            font-size: 13px;
+            margin-top: 8px;
+            color: #555;
+        }
+    }
+
+    .galeria-servicios {
+        padding: 1rem 1.5rem;
+    }
+
+    .servicio {
+        width: 90%;
+        margin: 1rem auto;
+    }
+
+    .turno-contenido {
+        padding: 1rem 1.5rem;
+    }
+
+    .titulos-main {
+        font-size: 1.5rem;
+    }
+
+    .formulario-turno {
+        form {
+            label {
+                font-size: 0.9rem;
+            }
+
+        }
+    }
+
+    .condiciones-turno {
+        ul {
+            li {
+                font-size: 0.9rem;
+            }
+        }
+
+        h2 {
+            font-size: 1.3rem;
+
+        }
+    }
+
+    iframe {
+        height: 120px !important;
+    }
+
+    .hero {
+        background-attachment: scroll;
+
+    }
+
+    .galeria {
+        gap: 20px;
+        padding: 0 0.5rem;
+
+        img {
+            height: auto;
+            object-fit: contain;
+        }
+    }
+
+    .fotos-equipo {
+        padding: 15px 8px;
+    }
+
+    .foto-grupal {
+        border-radius: 8px;
+    }
+
+
+}
+
+@media (max-width: 350px) {
+    header {
+        p {
+            letter-spacing: 0.5px;
+            font-size: 10px;
+            padding: 5px 8px;
+            text-align: center;
+        }
+    }
+
+    h1,
+    .titulo-principal {
+        font-size: 24px;
+        padding: 5px;
+    }
+
+    .hero {
+        background-attachment: scroll;
+
+        h2 {
+            font-size: 1.5rem;
+
+        }
+
+        .boton-turno {
+            a {
+                font-size: 16px;
+                padding: 6px 12px;
+            }
+        }
+    }
+
+    .texto {
+        font-size: 16px;
+    }
+
+    .certificaciones {
+        a {
+            font-size: 14px;
+            padding: 8px;
+        }
+    }
+
+    .form-turno {
+        button {
+            font-size: 14px;
+            padding: 10px;
+        }
+
+        input,
+        select {
+            font-size: 14px;
+
+        }
+    }
+
+    .condiciones-turno {
+        padding: 20px;
+
+        h2 {
+            font-size: 18px;
+        }
+    }
+
+    .iconos-footer {
+        a {
+            font-size: 12px;
+
+        }
+    }
+
+    footer {
+        div {
+            ul {
+                li {
+                    a {
+                        i {
+                            font-size: 18px;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    iframe {
+        height: 120px;
+    }
+
+    .container-titulo {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .img-logo-academy {
+        width: 50px;
+        height: auto;
+    }
+
+    .titulo-principal {
+        font-size: 1.2rem;
+    }
+
+    nav {
+        ul.pages {
+            flex-direction: column;
+            gap: 8px;
+            padding: 0;
+
+            li {
+                a {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    .bg-light {
+        .container {
+            h1.titulos-main {
+                font-size: 1.3rem;
+                text-align: center;
+
+            }
+        }
+    }
+
+    .row.mb-5 {
+        >div {
+            padding: 0 10px;
+            margin-bottom: 20px;
+
+        }
+
+        h4 {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+
+        }
+
+        ul.list-group {
+            li {
+                font-size: 12px;
+
+            }
+        }
+
+        p {
+            font-size: 12px;
+
+        }
+
+        ul {
+
+            li {
+                font-size: 12px;
+
+            }
+        }
+    }
+
+    .carousel-inner {
+        div {
+            img {
+                max-width: 90vw;
+                height: auto;
+            }
+        }
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .mapayredes {
+        iframe {
+            width: 280px;
+            height: 120px;
+        }
+    }
+
+    .iconos-footer {
+        li {
+            a {
+                font-size: 12px;
+
+            }
+        }
+    }
+
+    footer {
+        .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            padding: 10px;
+        }
+
+        .copyright {
+            flex: 1 1 100%;
+            text-align: center;
+            font-size: 12px;
+            margin-top: 8px;
+            color: #555;
+        }
+
+    }
+
+    .galeria-servicios {
+        h1.titulos-main {
+            font-size: 1.5rem;
+            padding: 0 1rem;
+        }
+    }
+
+    .servicio {
+        h3 {
+            font-size: 1rem;
+        }
+    }
+
+    .boton-turno {
+        a {
+            font-size: 1rem;
+
+        }
+    }
+
+    .titulos-main {
+        font-size: 1.3rem;
+    }
+
+    button[type="submit"] {
+        font-size: 1rem;
+        padding: 0.75rem;
+    }
+
+    .formulario-turno {
+        form {
+            label {
+                font-size: 0.85rem;
+            }
+
+        }
+    }
+
+    .condiciones-turno {
+        ul {
+            li {
+                font-size: 0.85rem;
+            }
+        }
+
+        h2 {
+            font-size: 1.1rem;
+
+        }
+    }
+
+    .galeria {
+        gap: 15px;
+        padding: 0 0.25rem;
+
+        img {
+            height: auto;
+            object-fit: contain;
+        }
+    }
+
+    .fotos-equipo {
+        padding: 10px 5px;
+        gap: 10px;
+    }
+
+    .foto-grupal {
+        border-radius: 6px;
+        box-shadow: none;
+    }
+
+
+}

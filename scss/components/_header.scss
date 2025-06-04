@@ -1,0 +1,63 @@
+header {
+    background-color: $fondo-principal;
+    text-align: center;
+    border-radius: 5px;
+
+    p {
+        color: #ffffff;
+        font-size: nth($font-size, 2);
+        @include spacingStyles (5px, 0px, 5px);
+    }
+
+    nav {
+        @include spacingStyles (2px, 1px, normal);
+    }
+
+}
+
+.pages {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    li {
+        a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: nth($font-size, 4);
+        }
+    }
+}
+
+.container-titulo {
+    display: flex;
+    justify-content: space-around;
+
+    h1 {
+        justify-content: center;
+        align-content: center;
+    }
+}
+
+.img-logo-academy {
+    height: 130px;
+    width: 150px;
+}
+
+.titulo-principal {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $color-titulos;
+    font-size: nth($font-size, 7);
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+h1 {
+    text-transform: uppercase;
+    color: $color-titulos;
+    font-size: nth($font-size, 7);
+    font-weight: 400;
+    padding: 10px;
+    letter-spacing: 3px;
+}

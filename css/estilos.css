@@ -1,0 +1,1042 @@
+@charset "UTF-8";
+/*----------VARIABLES----------*/
+/*color de fondo general*/
+/*color de todos los titulos principales*/
+/*----------LISTAS----------*/
+/*7*/
+/*----------EXTENDS----------*/
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Quicksand:wght@300..700&display=swap");
+.servicio img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/*----------MIXIN----------*/
+/* IMPORTACIÓN DE FUENTE */
+/*ASPECTOS GENERALES*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "quicksand";
+}
+
+body,
+html {
+  height: 100%;
+}
+
+li {
+  list-style: none;
+  /* saco las viñetas de todas las listas del HTML*/
+}
+
+header {
+  background-color: #000000;
+  text-align: center;
+  border-radius: 5px;
+}
+header p {
+  color: #ffffff;
+  font-size: 15px;
+  padding: 5px;
+  margin: 0px;
+  letter-spacing: 5px;
+}
+header nav {
+  padding: 2px;
+  margin: 1px;
+  letter-spacing: normal;
+}
+
+.pages {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.pages li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.container-titulo {
+  display: flex;
+  justify-content: space-around;
+}
+.container-titulo h1 {
+  justify-content: center;
+  align-content: center;
+}
+
+.img-logo-academy {
+  height: 130px;
+  width: 150px;
+}
+
+.titulo-principal {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #c4817e;
+  font-size: 70px;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+
+h1 {
+  text-transform: uppercase;
+  color: #c4817e;
+  font-size: 70px;
+  font-weight: 400;
+  padding: 10px;
+  letter-spacing: 3px;
+}
+
+/*----------ESTILOS INDEX----------*/
+.hero {
+  background-image: url(../img/img-hero.JPG);
+  background-size: cover;
+  background-position: center 25%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 60dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 5px;
+}
+.hero h2 {
+  justify-items: center;
+  color: #ffffff;
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.7);
+}
+
+.boton-turno {
+  grid-column: 1/-1;
+  display: flex;
+  justify-content: center;
+}
+.boton-turno a {
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 25px;
+  background-color: #c4817e;
+  transition: all 0.3s ease;
+}
+.boton-turno a:hover {
+  background-color: black;
+  border: solid white 2px;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.certificaciones {
+  background-color: #000000;
+  color: #c4817e;
+  display: grid;
+  padding: 25px;
+  border-radius: 5px;
+  margin-top: 1px;
+}
+.certificaciones div div h2 {
+  font-size: 3rem;
+  color: #c4817e;
+  text-align: center;
+}
+.certificaciones div div img {
+  height: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  width: 100%;
+  transition: transform 0.5s ease;
+}
+.certificaciones div div img:hover {
+  transform: scale(1.1);
+}
+.certificaciones a {
+  background-color: #c4817e;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px;
+  border: solid 2px white;
+  border-radius: 5px;
+  padding: 15px;
+  display: inline-block;
+}
+
+.container-certificaciones {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #ffffff;
+  margin: 10px;
+  font-size: 20px;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+
+.titulos-main {
+  text-align: center;
+  font-size: 50px;
+  grid-column: 1/-1;
+  margin-bottom: 10px;
+  color: #c4817e;
+}
+
+/*----------ESTILOS NUESTROS SERVICIOS----------*/
+.galeria-servicios {
+  background-color: #000000;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* 3 columnas */
+  gap: 20px;
+  /* espacio entre filas y columnas */
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.servicio {
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 1px;
+  margin: 10px;
+  justify-self: center;
+  width: 80%;
+  height: 80%;
+}
+.servicio img {
+  border-radius: 10px;
+  padding: 5px;
+  transition: transform 0.3s ease;
+}
+.servicio img:hover {
+  transform: scale(1.03);
+}
+.servicio h3 {
+  font-size: 18px;
+  text-align: center;
+  padding: 10px;
+  color: #c4817e;
+  margin: 10px;
+  border: solid 2px #c4817e;
+  border-radius: 8px;
+  background-color: white;
+  position: relative;
+  transition: all 0.5s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  cursor: default;
+  font-weight: bold;
+}
+.servicio h3:hover {
+  background-color: #f8eaea;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-20px);
+}
+
+/*----------ESTILOS TURNOS----------*/
+.turno-contenido {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px;
+  background-color: #000;
+  color: white;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.formulario-turno {
+  flex: 1 1 400px;
+  max-width: 500px;
+  border: solid 2px white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.form-turno {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+}
+
+.form-turno input,
+.form-turno select {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+}
+
+.form-turno button {
+  background-color: #c4817e;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.form-turno button:hover {
+  background-color: #a96865;
+}
+
+.aclaracion-turno {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 18px;
+  color: #c4817e;
+}
+
+.condiciones-turno {
+  flex: 1 1 400px;
+  max-width: 500px;
+  background-color: #1a1a1a;
+  padding: 50px;
+  border-radius: 10px;
+  border: solid 2px white;
+}
+.condiciones-turno h2 {
+  text-align: center;
+  color: #c4817e;
+  margin-bottom: 20px;
+}
+.condiciones-turno ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  line-height: 1.6;
+}
+.condiciones-turno ul li {
+  margin-bottom: 10px;
+}
+
+/*----------ESTILOS CURSOS Y CAPACITACIONES (BOOTSTRAP)----------*/
+.cursos-y-capacitaciones {
+  background-color: #000000;
+  color: #c4817e;
+  display: grid;
+  padding-top: 25px;
+  border-radius: 5px;
+  margin-top: 0px;
+}
+
+.bg-light {
+  background-color: black !important;
+  color: white;
+}
+
+.text-dark {
+  color: white !important;
+}
+
+.container div div h4 {
+  color: #c4817e;
+}
+
+.list-group-item {
+  color: white;
+  background-color: #1a1a1a;
+}
+
+.col-md-6 {
+  padding: 5px;
+}
+.col-md-6 ul li {
+  list-style: disc;
+}
+
+/*----------CONOCENOS----------*/
+.conocenos {
+  background-color: #000000;
+  color: #c4817e;
+  padding: 25px;
+  border-radius: 5px;
+  margin-top: 1px;
+}
+
+.intro-equipo p {
+  color: white;
+  text-align: center;
+}
+
+.fotos-equipo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.foto-grupal {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+.foto-grupal:hover {
+  transform: scale(1.05);
+}
+
+.footer-container {
+  background-color: #000000;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 1px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mapayredes {
+  display: flex;
+}
+
+.copyright {
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  font-style: italic;
+  font-size: 15px;
+}
+
+iframe {
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.iconos-footer {
+  padding: 10px;
+  margin: 10px;
+  letter-spacing: normal;
+}
+.iconos-footer a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+footer div div ul li i {
+  color: white;
+  font-size: 25px;
+  padding: 5px;
+}
+
+@media (max-width: 1024px) {
+  .container-certificaciones {
+    grid-template-columns: 1fr;
+  }
+  .galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    padding: 1rem;
+  }
+  .galeria-servicios {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .mapayredes {
+    flex-direction: column;
+    align-items: center;
+  }
+  header p {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+  .container-titulo {
+    gap: 30px;
+  }
+  .img-logo-academy {
+    width: 100px;
+  }
+  .titulo-principal {
+    font-size: 2.2rem;
+  }
+  nav ul.pages li a {
+    font-size: 18px;
+    padding: 10px 15px;
+  }
+  .bg-light .container h1.titulos-main {
+    font-size: 2.5rem;
+  }
+  .row.mb-5 > div {
+    padding: 0 25px;
+  }
+  .row.mb-5 h4 {
+    font-size: 1.8rem;
+  }
+  .row.mb-5 ul.list-group li {
+    font-size: 16px;
+  }
+  .row.mb-5 p {
+    font-size: 16px;
+  }
+  .row.mb-5 ul li {
+    font-size: 16px;
+  }
+  .carousel-inner div img {
+    max-width: 450px;
+    height: auto;
+  }
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .mapayredes iframe {
+    width: 300px;
+    height: 125px;
+  }
+  .iconos-footer li a {
+    font-size: 18px;
+  }
+  footer .footer-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+  }
+  footer .copyright {
+    flex: 0 0 auto;
+    margin-top: 0;
+    text-align: right;
+    font-size: 16px;
+    color: #555;
+  }
+  .galeria-servicios {
+    padding: 2rem 3rem;
+  }
+  .servicio {
+    width: 45%;
+    margin: 1rem auto;
+  }
+  .turno-contenido {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem 3rem;
+  }
+  .formulario-turno,
+  .condiciones-turno {
+    flex: 1 1 45%;
+  }
+  iframe {
+    width: 100% !important;
+    height: 150px !important;
+  }
+  .hero {
+    background-attachment: scroll;
+  }
+  .galeria {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+  .fotos-equipo {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 30px 15px;
+  }
+}
+@media (max-width: 768px) {
+  h1,
+  .titulo-principal {
+    font-size: 40px;
+  }
+  .pages {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .container-titulo {
+    flex-direction: column;
+    align-items: center;
+  }
+  .img-logo-academy:first-of-type {
+    display: none;
+  }
+  .galeria {
+    gap: 20px;
+  }
+  .galeria-servicios {
+    grid-template-columns: 1fr;
+  }
+  .turno-contenido {
+    padding: 20px;
+  }
+  .formulario-turno,
+  .condiciones-turno {
+    padding: 20px;
+  }
+  .certificaciones div div h2 {
+    font-size: 2rem;
+  }
+  header p {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+  .container-titulo {
+    gap: 20px;
+  }
+  .img-logo-academy {
+    width: 80px;
+  }
+  .titulo-principal {
+    font-size: 1.8rem;
+  }
+  nav ul.pages {
+    justify-content: center;
+  }
+  nav ul.pages li a {
+    font-size: 16px;
+    padding: 8px 12px;
+  }
+  .bg-light .container h1.titulos-main {
+    font-size: 2rem;
+  }
+  .row.mb-5 > div {
+    padding: 0 20px;
+  }
+  .row.mb-5 h4 {
+    font-size: 1.5rem;
+  }
+  .row.mb-5 ul.list-group li {
+    font-size: 14px;
+  }
+  .row.mb-5 p {
+    font-size: 14px;
+  }
+  .row.mb-5 ul li {
+    font-size: 14px;
+  }
+  .carousel-inner div img {
+    max-width: 400px;
+    height: auto;
+  }
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .mapayredes iframe {
+    width: 300px;
+    height: 125px;
+  }
+  .iconos-footer li a {
+    font-size: 16px;
+  }
+  footer .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+  }
+  footer .copyright {
+    flex: 1 1 100%;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+    color: #555;
+  }
+  .galeria-servicios {
+    padding: 1.5rem 2rem;
+  }
+  .servicio {
+    width: 60%;
+  }
+  .turno-contenido {
+    padding: 1.5rem 2rem;
+  }
+  .formulario-turno,
+  .condiciones-turno {
+    flex: 1 1 100%;
+  }
+  form.form-turno {
+    max-width: 100%;
+  }
+  input[type=text],
+  input[type=tel],
+  input[type=email],
+  input[type=date],
+  input[type=time],
+  select {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  button[type=submit] {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+  }
+  .hero {
+    background-attachment: scroll;
+  }
+  .galeria {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 0 1rem;
+  }
+  .galeria img {
+    height: auto;
+    object-fit: contain;
+  }
+  .fotos-equipo {
+    grid-template-columns: 1fr;
+    padding: 20px 10px;
+  }
+}
+@media (max-width: 480px) {
+  header p {
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding: 6px 10px;
+  }
+  h1,
+  .titulo-principal {
+    font-size: 30px;
+    text-align: center;
+  }
+  .hero h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .hero .boton-turno a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 1.2rem;
+  }
+  .galeria {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  .certificaciones a {
+    font-size: 16px;
+    padding: 10px;
+  }
+  .form-turno button {
+    font-size: 16px;
+  }
+  .condiciones-turno h2 {
+    font-size: 20px;
+  }
+  .iconos-footer a {
+    font-size: 14px;
+  }
+  footer div ul li a i {
+    font-size: 20px;
+  }
+  iframe {
+    width: 100%;
+    height: 150px;
+  }
+  .container-titulo {
+    gap: 10px;
+  }
+  .img-logo-academy {
+    width: 60px;
+  }
+  .titulo-principal {
+    font-size: 1.5rem;
+  }
+  nav ul.pages {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  nav ul.pages li a {
+    font-size: 14px;
+    padding: 5px 8px;
+  }
+  .bg-light .container h1.titulos-main {
+    font-size: 1.6rem;
+  }
+  .row.mb-5 > div {
+    padding: 0 15px;
+  }
+  .row.mb-5 h4 {
+    font-size: 1.3rem;
+  }
+  .row.mb-5 ul.list-group li {
+    font-size: 13px;
+  }
+  .row.mb-5 p {
+    font-size: 13px;
+  }
+  .row.mb-5 ul li {
+    font-size: 13px;
+  }
+  .carousel-inner div img {
+    max-width: 380px;
+    height: auto;
+  }
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .mapayredes iframe {
+    width: 300px;
+    height: 125px;
+  }
+  .iconos-footer li a {
+    font-size: 14px;
+  }
+  footer .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+  }
+  footer .copyright {
+    flex: 1 1 100%;
+    text-align: center;
+    font-size: 13px;
+    margin-top: 8px;
+    color: #555;
+  }
+  .galeria-servicios {
+    padding: 1rem 1.5rem;
+  }
+  .servicio {
+    width: 90%;
+    margin: 1rem auto;
+  }
+  .turno-contenido {
+    padding: 1rem 1.5rem;
+  }
+  .titulos-main {
+    font-size: 1.5rem;
+  }
+  .formulario-turno form label {
+    font-size: 0.9rem;
+  }
+  .condiciones-turno ul li {
+    font-size: 0.9rem;
+  }
+  .condiciones-turno h2 {
+    font-size: 1.3rem;
+  }
+  iframe {
+    height: 120px !important;
+  }
+  .hero {
+    background-attachment: scroll;
+  }
+  .galeria {
+    gap: 20px;
+    padding: 0 0.5rem;
+  }
+  .galeria img {
+    height: auto;
+    object-fit: contain;
+  }
+  .fotos-equipo {
+    padding: 15px 8px;
+  }
+  .foto-grupal {
+    border-radius: 8px;
+  }
+}
+@media (max-width: 350px) {
+  header p {
+    letter-spacing: 0.5px;
+    font-size: 10px;
+    padding: 5px 8px;
+    text-align: center;
+  }
+  h1,
+  .titulo-principal {
+    font-size: 24px;
+    padding: 5px;
+  }
+  .hero {
+    background-attachment: scroll;
+  }
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+  .hero .boton-turno a {
+    font-size: 16px;
+    padding: 6px 12px;
+  }
+  .texto {
+    font-size: 16px;
+  }
+  .certificaciones a {
+    font-size: 14px;
+    padding: 8px;
+  }
+  .form-turno button {
+    font-size: 14px;
+    padding: 10px;
+  }
+  .form-turno input,
+  .form-turno select {
+    font-size: 14px;
+  }
+  .condiciones-turno {
+    padding: 20px;
+  }
+  .condiciones-turno h2 {
+    font-size: 18px;
+  }
+  .iconos-footer a {
+    font-size: 12px;
+  }
+  footer div ul li a i {
+    font-size: 18px;
+  }
+  iframe {
+    height: 120px;
+  }
+  .container-titulo {
+    flex-direction: column;
+    gap: 5px;
+  }
+  .img-logo-academy {
+    width: 50px;
+    height: auto;
+  }
+  .titulo-principal {
+    font-size: 1.2rem;
+  }
+  nav ul.pages {
+    flex-direction: column;
+    gap: 8px;
+    padding: 0;
+  }
+  nav ul.pages li a {
+    font-size: 12px;
+  }
+  .bg-light .container h1.titulos-main {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  .row.mb-5 > div {
+    padding: 0 10px;
+    margin-bottom: 20px;
+  }
+  .row.mb-5 h4 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  .row.mb-5 ul.list-group li {
+    font-size: 12px;
+  }
+  .row.mb-5 p {
+    font-size: 12px;
+  }
+  .row.mb-5 ul li {
+    font-size: 12px;
+  }
+  .carousel-inner div img {
+    max-width: 90vw;
+    height: auto;
+  }
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .mapayredes iframe {
+    width: 280px;
+    height: 120px;
+  }
+  .iconos-footer li a {
+    font-size: 12px;
+  }
+  footer .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+  }
+  footer .copyright {
+    flex: 1 1 100%;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 8px;
+    color: #555;
+  }
+  .galeria-servicios h1.titulos-main {
+    font-size: 1.5rem;
+    padding: 0 1rem;
+  }
+  .servicio h3 {
+    font-size: 1rem;
+  }
+  .boton-turno a {
+    font-size: 1rem;
+  }
+  .titulos-main {
+    font-size: 1.3rem;
+  }
+  button[type=submit] {
+    font-size: 1rem;
+    padding: 0.75rem;
+  }
+  .formulario-turno form label {
+    font-size: 0.85rem;
+  }
+  .condiciones-turno ul li {
+    font-size: 0.85rem;
+  }
+  .condiciones-turno h2 {
+    font-size: 1.1rem;
+  }
+  .galeria {
+    gap: 15px;
+    padding: 0 0.25rem;
+  }
+  .galeria img {
+    height: auto;
+    object-fit: contain;
+  }
+  .fotos-equipo {
+    padding: 10px 5px;
+    gap: 10px;
+  }
+  .foto-grupal {
+    border-radius: 6px;
+    box-shadow: none;
+  }
+}
+/*----------MEDIA QUERY----------*/
+
+/*# sourceMappingURL=estilos.css.map */

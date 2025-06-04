@@ -1,0 +1,39 @@
+/*----------VARIABLES----------*/
+
+$fondo-principal: #000000;
+/*color de fondo general*/
+$color-titulos: #c4817e;
+/*color de todos los titulos principales*/
+
+
+/*----------LISTAS----------*/
+
+$font-size: 3rem,
+    /*1*/
+    15px,
+    /*2*/
+    18px,
+    /*3*/
+    20px,
+    /*4*/
+    25px,
+    /*5*/
+    50px,
+    /*6*/
+    70px;
+/*7*/
+
+
+/*----------EXTENDS----------*/
+%img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/*----------MIXIN----------*/
+@mixin spacingStyles($padding, $margin, $letterSpacing) {
+    padding: $padding;
+    margin: $margin;
+    letter-spacing: $letterSpacing;
+}

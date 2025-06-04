@@ -1,0 +1,53 @@
+.footer-container {
+    background-color: $fondo-principal;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 1px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.mapayredes {
+    display: flex;
+}
+
+.copyright {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    font-style: italic;
+    font-size: nth($font-size, 2);
+}
+
+iframe {
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.iconos-footer {
+    @include spacingStyles (10px, 10px, normal);
+
+
+    a {
+        color: white;
+        text-decoration: none;
+        font-size: nth($font-size, 2);
+    }
+}
+
+footer {
+    div {
+        div {
+            ul {
+                li {
+                    i {
+                        color: white;
+                        font-size: nth($font-size, 5);
+                        padding: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
