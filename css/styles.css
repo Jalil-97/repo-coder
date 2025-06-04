@@ -870,10 +870,6 @@ footer i {
         padding: 8px 16px;
     }
 
-    .galeria {
-        grid-template-columns: 1fr;
-        gap: 15px;
-    }
 
     .certificaciones a {
         font-size: 16px;
@@ -1031,8 +1027,10 @@ footer i {
     }
 
     .galeria {
-        gap: 20px;
+        grid-template-columns: 1fr;
+        gap: 15px;
         padding: 0 0.5rem;
+
     }
 
     .galeria img {

@@ -456,6 +456,12 @@
     .galeria {
         grid-template-columns: 1fr;
         gap: 15px;
+        padding: 0 0.5rem;
+
+        img {
+            height: auto;
+            object-fit: contain;
+        }
     }
 
     .certificaciones {
@@ -670,15 +676,7 @@
 
     }
 
-    .galeria {
-        gap: 20px;
-        padding: 0 0.5rem;
 
-        img {
-            height: auto;
-            object-fit: contain;
-        }
-    }
 
     .fotos-equipo {
         padding: 15px 8px;

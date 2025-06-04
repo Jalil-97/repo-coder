@@ -742,6 +742,11 @@ footer div div ul li i {
   .galeria {
     grid-template-columns: 1fr;
     gap: 15px;
+    padding: 0 0.5rem;
+  }
+  .galeria img {
+    height: auto;
+    object-fit: contain;
   }
   .certificaciones a {
     font-size: 16px;
@@ -856,14 +861,6 @@ footer div div ul li i {
   }
   .hero {
     background-attachment: scroll;
-  }
-  .galeria {
-    gap: 20px;
-    padding: 0 0.5rem;
-  }
-  .galeria img {
-    height: auto;
-    object-fit: contain;
   }
   .fotos-equipo {
     padding: 15px 8px;
