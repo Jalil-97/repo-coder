@@ -461,8 +461,8 @@ footer div div ul li i {
   }
   .galeria {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
     padding: 1rem;
   }
   .galeria-servicios {
@@ -564,10 +564,6 @@ footer div div ul li i {
   .hero {
     background-attachment: scroll;
   }
-  .galeria {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
-  }
   .fotos-equipo {
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
@@ -575,6 +571,17 @@ footer div div ul li i {
   }
 }
 @media (max-width: 768px) {
+  .galeria {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 1rem;
+  }
+  .galeria img {
+    display: block;
+    width: 90%;
+    height: auto;
+    object-fit: contain;
+  }
   h1,
   .titulo-principal {
     font-size: 40px;
@@ -589,9 +596,6 @@ footer div div ul li i {
   }
   .img-logo-academy:first-of-type {
     display: none;
-  }
-  .galeria {
-    gap: 20px;
   }
   .galeria-servicios {
     grid-template-columns: 1fr;
@@ -708,21 +712,23 @@ footer div div ul li i {
   .hero {
     background-attachment: scroll;
   }
-  .galeria {
-    grid-template-columns: 1fr;
-    gap: 30px;
-    padding: 0 1rem;
-  }
-  .galeria img {
-    height: auto;
-    object-fit: contain;
-  }
   .fotos-equipo {
     grid-template-columns: 1fr;
     padding: 20px 10px;
   }
 }
 @media (max-width: 480px) {
+  .galeria {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 0 0.5rem;
+  }
+  .galeria img {
+    display: block;
+    width: 90%;
+    height: auto;
+    object-fit: contain;
+  }
   header p {
     font-size: 12px;
     letter-spacing: 1px;
@@ -743,16 +749,6 @@ footer div div ul li i {
     text-align: center;
     padding: 1rem 0;
     font-size: 1.2rem;
-  }
-  .galeria {
-    grid-template-columns: 1fr;
-    gap: 15px;
-    padding: 0 0.5rem;
-  }
-  .galeria img {
-    height: auto;
-    width: 90%;
-    object-fit: contain;
   }
   .certificaciones a {
     font-size: 16px;
@@ -876,6 +872,17 @@ footer div div ul li i {
   }
 }
 @media (max-width: 350px) {
+  .galeria {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 0 0.25rem;
+  }
+  .galeria img {
+    display: block;
+    width: 90%;
+    height: auto;
+    object-fit: contain;
+  }
   header p {
     letter-spacing: 0.5px;
     font-size: 10px;
@@ -1022,16 +1029,6 @@ footer div div ul li i {
   }
   .condiciones-turno h2 {
     font-size: 1.1rem;
-  }
-  .galeria {
-    grid-template-columns: 1fr;
-    gap: 10px;
-    padding: 0 0.25rem;
-  }
-  .galeria img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
   }
   .fotos-equipo {
     padding: 10px 5px;
