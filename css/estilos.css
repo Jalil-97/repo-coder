@@ -197,6 +197,11 @@ h1 {
   grid-template-columns: repeat(2, 1fr);
   gap: 50px;
 }
+.galeria img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
 
 .titulos-main {
   text-align: center;
@@ -746,6 +751,7 @@ footer div div ul li i {
   }
   .galeria img {
     height: auto;
+    width: 90%;
     object-fit: contain;
   }
   .certificaciones a {
