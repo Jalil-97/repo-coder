@@ -285,7 +285,9 @@
     .row.mb-5 {
         >div {
             padding: 0 20px;
-
+            width: 100%;
+            max-width: 100%;
+            flex: 0 0 100%;
         }
 
         h4 {
@@ -548,7 +550,9 @@
     .row.mb-5 {
         >div {
             padding: 0 15px;
-
+            width: 100%;
+            max-width: 100%;
+            flex: 0 0 100%;
         }
 
         h4 {
@@ -827,9 +831,11 @@
 
     .row.mb-5 {
         >div {
-            padding: 0 10px;
-            margin-bottom: 20px;
-
+            padding: 0 10px !important;
+            margin-bottom: 20px!important;
+            width: 100%!important;
+            max-width: 100%!important;
+            flex: 0 0 100%!important;
         }
 
         h4 {

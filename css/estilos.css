@@ -374,6 +374,14 @@ h1 {
   list-style: disc;
 }
 
+.carousel-inner img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
 /*----------CONOCENOS----------*/
 .conocenos {
   background-color: #000000;
@@ -632,6 +640,9 @@ footer div div ul li i {
   }
   .row.mb-5 > div {
     padding: 0 20px;
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
   }
   .row.mb-5 h4 {
     font-size: 1.5rem;
@@ -790,6 +801,9 @@ footer div div ul li i {
   }
   .row.mb-5 > div {
     padding: 0 15px;
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
   }
   .row.mb-5 h4 {
     font-size: 1.3rem;
@@ -955,8 +969,11 @@ footer div div ul li i {
     text-align: center;
   }
   .row.mb-5 > div {
-    padding: 0 10px;
-    margin-bottom: 20px;
+    padding: 0 10px !important;
+    margin-bottom: 20px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
   }
   .row.mb-5 h4 {
     font-size: 1.1rem;
