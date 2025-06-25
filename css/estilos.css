@@ -19,6 +19,10 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   font-family: "quicksand";
 }
@@ -36,6 +40,7 @@ header {
   background-color: #000000;
   text-align: center;
   border-radius: 5px;
+  padding: 0px;
 }
 header p {
   color: #ffffff;
@@ -63,7 +68,7 @@ header nav {
 
 .container-titulo {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .container-titulo h1 {
   justify-content: center;
@@ -71,26 +76,31 @@ header nav {
 }
 
 .img-logo-academy {
-  height: 130px;
-  width: 150px;
+  padding-left: 10px;
+  height: 100px;
+  width: 120px;
 }
 
-.titulo-principal {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #c4817e;
-  font-size: 70px;
-  font-weight: 400;
-  letter-spacing: 3px;
-}
-
-h1 {
+h1, .titulo-principal {
   text-transform: uppercase;
   color: #c4817e;
   font-size: 70px;
   font-weight: 400;
   padding: 10px;
-  letter-spacing: 3px;
+  letter-spacing: 10px;
+}
+
+.container nav {
+  padding-top: 0px;
+}
+.container nav ul li a {
+  color: white !important;
+  padding: 10px !important;
+  font-size: 20px;
+}
+
+.bg-black {
+  background-color: #000000 !important;
 }
 
 /*----------ESTILOS INDEX----------*/
